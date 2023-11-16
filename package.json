@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://anitaprzedwojewska.github.io/project-1-simply-chocolate/",
+  "homepage": "https://AnitaPrzedwojewska.github.io/project-1-simply-chocolate/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url project-1-simply-chocolate"
+    "build": "parcel build src/*.html --public-url /project-1-simply-chocolate/"
   },
   "repository": {
     "type": "git",
