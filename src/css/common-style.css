@@ -1,0 +1,130 @@
+:root {
+    --WHITE: #FFF;              /* białe tło i elementy */
+    --LIGHT-BKG: #FAFAFA;       /* lekko szare tło */
+    --DARK-BKG: #1E1823;        /* ciemne tło */
+    --ACCENT: #FD9222;          /* pomarańczowe elementy i tło */
+    --ACCENT-LIGH: #FCF1E0;     /* lekko pomarańczowe tło */
+    --DARK: #111;               /* ciemne elementy */
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: var(--LIGHT-BKG);
+	color: var(--DARK);
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.28;
+	letter-spacing: -0.28px;
+}
+.list {
+	display: flex;
+	list-style-type: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.clear-style {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+@media screen and (min-width: 375px) {
+	.container {
+		max-width: 375px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+.link {
+	text-decoration: none;
+	cursor: pointer;
+}
+.accent {
+	color: var(--ACCENT);
+}
+/* style do kompletowania w zależności od przycisku */
+/* np. button clas="btn btn-45 btn-accent" - wielki pomarańczowy przycisk */
+/* np. button clas="btn btn-29 btn-outline" - mały przycisk przezroczysty */
+.btn {
+	display: block;
+	outline: none;
+	cursor: pointer;
+}
+/* wielkości */
+.btn-45 {
+	height: 45px;
+	padding: 0 28px;
+	border-radius: 100px;
+}
+.btn-41 {
+	height: 41px;
+	padding: 0 28px;
+	border-radius: 100px;
+}
+.btn-33 {
+	height: 33px;
+	padding: 0 20px;
+	border-radius: 100px;
+}
+.btn-29 {
+	height: 29px;
+	padding: 0 16px;
+	border-radius: 100px;
+}
+.btn-24 {
+	height: 24px;
+	padding: 0 16px;
+	border-radius: 35px;
+}
+/* kolorystyka */
+.btn-accent {
+	background-color: var(--ACCENT);
+	border: 1px solid var(--ACCENT);
+	color: var(--WHITE);
+}
+.btn-outln {
+	background-color: transparent;
+	border: 1px solid var(--WHITE);
+	color: var(--WHITE);
+}
+.btn-outln-accent {
+	background-color: transparent;
+	border: 1px solid var(--ACCENT);
+	color: var(--DARK);
+}
+.btn-other {
+	background-color: var(--LIGHT-BKG);
+	border: 1px solid rgba(17, 17, 17, 0.1);
+	color: var(--DARK);
+}
