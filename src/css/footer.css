@@ -4,7 +4,6 @@
 }
 .foot-header {
   color: var(--WHITE);
-  font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -13,12 +12,9 @@
   padding-top: 32px;
   max-width: 300px;
 }
-.foot-header-span {
-  color: var(--ACCENT);
-}
+
 .foot-contact-paragraph {
   color: var(--WHITE);
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -28,7 +24,6 @@
 .foot-address-list {
   flex-direction: column;
   gap: 4px;
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -43,7 +38,6 @@
 }
 .foot-nav-link {
   color: var(--WHITE);
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -70,6 +64,8 @@
 }
 .foot-social-svg {
   fill: var(--WHITE);
+  width: 22px;
+  height: 22px;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,6 +80,14 @@
   }
   .foot-social-media-list {
     gap: 18px;
+  }
+  .foot-social-svg {
+    width: 24px;
+    height: 24px;
+  }
+  .foot-header {
+    font-size: 28px;
+    letter-spacing: -0.48;
   }
 }
 @media screen and (min-width: 1200px) {
