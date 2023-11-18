@@ -74,6 +74,13 @@ img {
 .accent {
 	color: var(--ACCENT);
 }
+.section-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.48px;
+}
 /* style do kompletowania w zależności od przycisku */
 /* np. button clas="btn btn-45 btn-accent" - wielki pomarańczowy przycisk */
 /* np. button clas="btn btn-29 btn-outline" - mały przycisk przezroczysty */
