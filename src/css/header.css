@@ -84,26 +84,6 @@
     transform: translateX(0);
 }
 
-/* ------------------------------------------------------ */
-
-@media screen and (min-width: 375px) {
-    .container {
-        width: 375px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
-
 /* ========== MOBILE ========== */
 @media screen and (max-width: 767px) {
     .header-container {
@@ -127,6 +107,11 @@
     .header-hamburger {
         width: 32px;
         height: 32px;
+    }
+
+    .header-modal-button {
+        top: 24px;
+        right: 32px;
     }
 
     .header-social-media-container-mobile {
