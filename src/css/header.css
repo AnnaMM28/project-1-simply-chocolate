@@ -1,5 +1,3 @@
-/* oprócz klasy .header pozostałe style rozpoczynają się od .head- */
-
 .header-container {
     display: flex;
     justify-content: space-between;
