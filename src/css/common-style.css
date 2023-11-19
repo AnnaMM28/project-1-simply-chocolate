@@ -33,6 +33,11 @@ img {
 	-webkit-appearance: none;
 	appearance: none;
 }
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -75,11 +80,22 @@ img {
 	color: var(--ACCENT);
 }
 .section-title {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 1.2;
-    letter-spacing: -0.48px;
+    letter-spacing: -0.6px;
+    
+}
+@media screen and (min-width: 768px) {
+    .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.17;
+        letter-spacing: -0.72px;
+    }
 }
 /* style do kompletowania w zależności od przycisku */
 /* np. button clas="btn btn-45 btn-accent" - wielki pomarańczowy przycisk */
@@ -121,15 +137,33 @@ img {
 	border: 1px solid var(--ACCENT);
 	color: var(--WHITE);
 }
+.btn-accent:hover,
+.btn-accent:focus {
+	background-color: var(--ACCENT-LIGH);
+	border: 1px solid var(--ACCENT-LIGH);
+	color: var(--ACCENT);
+}
 .btn-outln {
 	background-color: transparent;
 	border: 1px solid var(--WHITE);
 	color: var(--WHITE);
 }
+.btn-outln:hover,
+.btn-outln:focus {
+	background-color: transparent;
+	border: 1px solid var(--ACCENT);
+	color: var(--ACCENT);
+}
 .btn-outln-accent {
 	background-color: transparent;
 	border: 1px solid var(--ACCENT);
 	color: var(--DARK);
+}
+.btn-outln-accent:hover,
+.btn-outln-accent:focus {
+	background-color: var(--ACCENT);
+	border: 1px solid var(--ACCENT);
+	color: var(--WHITE);
 }
 .btn-other {
 	background-color: var(--LIGHT-BKG);

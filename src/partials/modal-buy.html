@@ -1,6 +1,82 @@
 <!-- element zamykający to okno musi mieć parametr data-modal-buy-close -->
-<div class="modal is-hidden" data-modal-buy>
+<div class="modal is-hidden" data-modal-buy><!-- <div class="modal is-hidden" data-modal-buy></div> -->
     <div class="modal-buy">
-
+        <h2 class="section-title mod-buy-title"><span class="accent">Buy</span> now</h2>
+        <form class="mod-buy-form" name="form-buy-now">
+            <ul class="list mod-buy-list">
+                <li>
+                    <picture>
+                        <source 
+                            media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-chocolate-cubes-84x69@2x.png"  size="84">
+                        <source 
+                            media="screen and (min-width: 768px)"
+                            srcset="./images/buy-now/tab-des-chocolate-cubes-120x107.png" size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-chocolate-cubes-120x107@2x.png" size="120">
+                        <img src="./images/buy-now/mob-chocolate-cubes-84x69.png" alt="chocolate cubes">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source 
+                            media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69@2x.png" size="84">
+                        <source 
+                            media="screen and (min-width: 768px)" 
+                            srcset="./images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107.png"
+                            size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107@2x.png" size="120">
+                        <img src="./images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69.png" alt="hazelnuts milk white chocolate cubes">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-chocolate-bars-84x69@2x.png" size="84">
+                        <source 
+                            media="screen and (min-width: 768px)"
+                            srcset="./images/buy-now/tab-des-chocolate-bars-120x111.png"
+                            size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-chocolate-bars-120x111@2x.png" size="120">
+                        <img src="./images/buy-now/mob-chocolate-bars-84x69.png" alt="chocolate cubes">
+                    </picture>
+                </li>
+            </ul>
+            <div>
+                <div>
+                    <label class="" for="user-name">Personal information</label>
+                    <input class="clear-style " id="user-name" type="text" name="user-name" placeholder="Name" required>
+                    <input class="clear-style " id="user-surname" type="text" name="user-surname" placeholder="Surname" required>
+                </div>
+                <div>
+                    <label class="" for="user-email">E-mail</label>
+                    <input class="clear-style " id="user-email" type="text" name="user-email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label class="" for="user-phone">Phone number</label>
+                    <input class="clear-style " id="user-phone" type="text" name="user-phone" placeholder="Phone number" required>
+                </div>
+                <div>
+                    <label class="" for="user-card">Card number</label>
+                    <input class="clear-style " id="user-card" type="text" name="user-card" placeholder="Enter card" required>
+                </div>
+                <div>
+                    <label class="" for="user-card">Comment</label>
+                    <textarea class="mod-buy-comment clear-style" id="user-comment" name="user-comment" rows="15" placeholder="Text input"></textarea>
+                </div>
+                <button class="btn send clear-style" type="submit">Submit</button>
+            </div>
+        </form>
+        <button type="button" class="btn clear-style close-order" data-modal-buy-close>
+            <svg class="svg-close-order" width="28" height="28">
+                <use href="./images/icons.svg#x-close"></use>
+            </svg>
+        </button>
     </div>
 </div>
