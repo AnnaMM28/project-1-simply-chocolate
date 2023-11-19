@@ -49,8 +49,16 @@
     line-height: 1.14;
 }
 
+.header-nav-links-mobile .link:focus {
+    color: var(--ACCENT);
+}
+
 .header-social-media-svg-mobile {
     fill: var(--WHITE);
+}
+
+.header-social-media-svg-mobile:focus {
+    fill: var(--ACCENT);
 }
 
 .header-social-media-links,
@@ -172,6 +180,11 @@
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: -0.28px;
+    }
+
+    .header-nav-links .link:hover,
+    .header-nav-links .link:focus {
+        color: var(--ACCENT);
     }
 
     .social-media-icon {
