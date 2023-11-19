@@ -1,17 +1,22 @@
 /* oprócz klasy .modal-buy pozostałe style rozpoczynają się od .mod-buy- */
 .modal-buy {
-    background-color: var(--LIGHT-BKG);
+    position: absolute;
+    top: 0; 
+    left: 50%;
     width: 100%;
     height: 994px;
     margin: 0 auto;
     padding: 32px 24px;
+    background-color: var(--LIGHT-BKG);
     border-radius: 15px;
+    transform: translateX(-50%);
 }
 .mod-buy-title {
     display: block;
-    color: var(--DARK);
     text-align: center;
     text-transform: uppercase;
+    color: var(--DARK);
+    margin-bottom: 32px;
 }
 @media screen and (min-width: 375px) {
     .modal-buy {
