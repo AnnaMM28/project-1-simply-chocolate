@@ -33,6 +33,11 @@ img {
 	-webkit-appearance: none;
 	appearance: none;
 }
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;

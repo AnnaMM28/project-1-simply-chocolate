@@ -3,43 +3,48 @@
     <div class="modal-buy">
         <h2 class="section-title mod-buy-title"><span class="accent">Buy</span> now</h2>
         <form class="mod-buy-form" name="form-buy-now">
-            <ul>
+            <ul class="list mod-buy-list">
                 <li>
                     <picture>
                         <source 
                             media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
-                            srcset="images/buy-now/mob-chocolate-cubes-84x69@2x.png"  size="84">
+                            srcset="./images/buy-now/mob-chocolate-cubes-84x69@2x.png"  size="84">
                         <source 
                             media="screen and (min-width: 768px)"
-                            srcset="images/buy-now/tab-des-chocolate-cubes-120x107.png" size="120">
+                            srcset="./images/buy-now/tab-des-chocolate-cubes-120x107.png" size="120">
                         <source
                             media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
-                            srcset="images/buy-now/tab-des-chocolate-cubes-120x107@2x.png" size="120">
-                        <img src="images/buy-now/mob-chocolate-cubes-84x69.png" alt="chocolate cubes">
+                            srcset="./images/buy-now/tab-des-chocolate-cubes-120x107@2x.png" size="120">
+                        <img src="./images/buy-now/mob-chocolate-cubes-84x69.png" alt="chocolate cubes">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source 
+                            media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69@2x.png" size="84">
+                        <source 
+                            media="screen and (min-width: 768px)" 
+                            srcset="./images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107.png"
+                            size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107@2x.png" size="120">
+                        <img src="./images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69.png" alt="hazelnuts milk white chocolate cubes">
                     </picture>
                 </li>
                 <li>
                     <picture>
                         <source media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
-                            srcset="images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69@2x.png" size="84">
-                        <source media="screen and (min-width: 768px)" srcset="images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107.png"
+                            srcset="./images/buy-now/mob-chocolate-bars-84x69@2x.png" size="84">
+                        <source 
+                            media="screen and (min-width: 768px)"
+                            srcset="./images/buy-now/tab-des-chocolate-bars-120x111.png"
                             size="120">
                         <source
                             media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
-                            srcset="images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107@2x.png" size="120">
-                        <img src="images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69.png" alt="hazelnuts milk white chocolate cubes">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
-                            srcset="images/buy-now/mob-chocolate-bars-84x69@2x.png" size="84">
-                        <source media="screen and (min-width: 768px)" srcset="images/buy-now/tab-des-chocolate-bars-120x107.png"
-                            size="120">
-                        <source
-                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
-                            srcset="images/buy-now/tab-des-chocolate-bars-120x107@2x.png" size="120">
-                        <img src="images/buy-now/mob-chocolate-bars-84x69.png" alt="chocolate cubes">
+                            srcset="./images/buy-now/tab-des-chocolate-bars-120x111@2x.png" size="120">
+                        <img src="./images/buy-now/mob-chocolate-bars-84x69.png" alt="chocolate cubes">
                     </picture>
                 </li>
             </ul>
@@ -68,5 +73,10 @@
                 <button class="btn send clear-style" type="submit">Submit</button>
             </div>
         </form>
+        <button type="button" class="btn clear-style close-order" data-modal-buy-close>
+            <svg class="svg-close-order" width="28" height="28">
+                <use href="./images/icons.svg#x-close"></use>
+            </svg>
+        </button>
     </div>
 </div>
