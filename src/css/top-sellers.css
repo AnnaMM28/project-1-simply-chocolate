@@ -1,1 +1,83 @@
-/* oprócz klasy .top-sellers pozostałe style rozpoczynają się od .top- */
+.top-images {
+  width: 335px;
+  height: 464px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  margin-top: 32px;
+}
+.top-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-paragraph {
+  margin-top: 20px;
+  width: 306px;
+}
+.top-last-photo {
+  display: none;
+}
+.top-sellers {
+  padding-top: 72px;
+}
+.top-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .top-sellers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+  .top-paragraph {
+    margin-top: 32px;
+  }
+  .top-li:first-child {
+    margin-right: 16px;
+  }
+  .top-content-div {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-button {
+    position: absolute;
+    right: 5px;
+    bottom: 68px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-last-photo {
+    display: block;
+  }
+  .top-list {
+    gap: 16px;
+  }
+  .top-li:first-child {
+    margin-right: 0px;
+  }
+  .top-button {
+    position: absolute;
+    right: 52px;
+    bottom: 55px;
+  }
+  .top-content-div {
+    padding-bottom: 104px;
+  }
+  .top-paragraph {
+    position: absolute;
+    width: 407px;
+  }
+}
