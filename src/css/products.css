@@ -1,1 +1,53 @@
 /* oprócz klasy .products pozostałe style rozpoczynają się od .prod- */
+.products>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+.prod-box {
+    align-self: flex-start;
+}
+.prod-list {
+	gap: 18px;
+	overflow: hidden;
+}
+.prod-list-item {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+    flex-direction: column;
+	flex-shrink: 0;
+	width: 335px;
+    padding: 32px 52px;
+    background-color: var(--WHITE);
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 15px;
+	text-align: center;
+}
+.prod-item-img {
+    /* display: block; */
+    margin: 0 auto;
+}
+.prod-item-title {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33; 
+}
+.prod-item-txt {
+    display: block;
+    margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+    .prod-list {
+        gap: 18px;
+    }
+    .prod-list-item {
+        width: 270px;
+        padding: 32px 20px;
+    }
+}
