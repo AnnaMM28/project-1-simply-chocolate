@@ -16,11 +16,8 @@
   --tr-fn: cubic-bezier(0.4, 0, 0.2, 1);
   --tr-duration: 250ms;
 }
-.hero-icon-tablet {
-  display: block;
-}
-.hero-icon-mobile {
-  display: none;
+.container {
+  max-width: 1200px;
 }
 .hero-body {
   font-family: 'Montserrat', sans-serif;
@@ -44,7 +41,7 @@
   .hero-background {
     display: block;
     padding: 395px 0 21px;
-    background-image: url(../images/hero/mob-hero-335x621@1x.jpg);
+    background-image: url(../images/hero/mob-hero-335x621.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -175,7 +172,7 @@
   .hero-background {
     display: block;
     padding: 395px 0 21px;
-    background-image: url(../images/hero/tab-hero-704x890@1x.jpg);
+    background-image: url(../images/hero/tab-hero-704x890.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -196,12 +193,6 @@
       margin: 50px 20px;
       border-radius: 30px;
     }
-  }
-  .hero-icon-tablet {
-    display: none;
-  }
-  .hero-icon-mobile {
-    display: block;
   }
   .hero-container {
     max-width: 1170px;
@@ -308,13 +299,12 @@
     transition-duration: var(--tr-duration);
   }
 }
-
-/* =========================================== DESKTOP 👇 ========================================*/
+/* ============================================ DESKTOP 👇 ========================================*/
 @media screen and (min-width: 1158px) {
   .hero-background {
     display: block;
     padding: 395px 0 21px;
-    background-image: url(../images/hero/des-hero-1136x600@1x.jpg);
+    background-image: url(../images/hero/des-hero-1136x600.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -335,5 +325,9 @@
       margin: 50px 20px;
       border-radius: 30px;
     }
+  }
+  .hero-container-first {
+    max-width: 1200px;
+    margin: 0 auto 50px;
   }
 }
