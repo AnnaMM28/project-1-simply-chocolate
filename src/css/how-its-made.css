@@ -1,1 +1,165 @@
 /* oprócz klasy .how-its-made pozostałe style rozpoczynają się od .how- */
+
+
+
+/*====== mobile version ====== */
+.how-container {
+  min-width: 335px;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0px auto;
+}
+
+.how-section {
+  padding-bottom: 72px;
+  background-color: var(--WHITE);
+}
+
+.how-description {
+  background-color: var(--WHITE);
+  border-radius: 15px;
+  padding: 20px 14px;
+}
+
+.how-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 32px;
+  letter-spacing: -0.03em;
+  line-height: calc(24/20);
+}
+
+iframe {
+  border-width: 0px;
+}
+
+
+.how-video {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  /*background: ;*/
+}
+
+.how-list {
+  width: 100%;
+  height: auto;
+}
+.how-recipe-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.33;
+}
+
+.how-recipe-title br {
+  display: none;
+}
+
+.how-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  display: flex;
+  list-style-type: circle;
+}
+.how-list-text:nth-child(-n + 1) {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 375px) {
+  .how-container {
+    width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+/*====== tablet version ======*/
+@media screen and (min-width: 768px){
+  .how-container {
+    width: 768px;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .how-section {
+    padding-bottom: 100px;
+  }
+  
+  .how-description {
+    padding: 32px;
+  }
+
+  .how-title {
+    font-size: 24px;
+    line-height: calc(28/24);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  .how-video {
+    height: 400px;
+  }
+
+  .how-recipe-title {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+
+  .how-recipe-title br {
+    display: flex;
+  }
+
+  .how--list-text {
+    width: 464px;
+  }
+}
+
+/* ====== desktop version ======*/
+@media screen and (min-width: 1200px) {
+  .how-conteiner {
+    width: 1200px;
+    padding-left:32px;
+    padding-right: 32px;
+  }
+  
+  .how-section {
+    padding-bottom: 128px;
+  }
+
+  .how-description {
+    width: 516px;
+    padding: 32px;
+  }
+
+  .how-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .how-video {
+    width: 600px;
+    margin-bottom: 0px;
+  }
+
+  .how-list {
+    height: auto;
+  }
+
+  .how-list-text {
+    width: 452px;
+    margin-bottom: 0px;
+  }
+
+  .how-text:nth-child(1) {
+    display: none;
+  }
+  
+} 
