@@ -28,7 +28,6 @@
 	text-align: center;
 }
 .prod-item-img {
-    /* display: block; */
     margin: 0 auto;
 }
 .prod-item-title {
@@ -42,10 +41,20 @@
     display: block;
     margin-bottom: 18px;
 }
+.prod-list-dots {
+    gap: 13px;
+}
+.prod-dot-item-svg {
+    width: 13px;
+    height: 13px;
+    fill: rgba(17, 17, 17, 0.10);
+}
+.prod-dot-item-svg.long {
+    width: 28px;
+    height: 13px;
+    fill: var(--ACCENT);
+}
 @media screen and (min-width: 768px) {
-    .prod-list {
-        gap: 18px;
-    }
     .prod-list-item {
         width: 270px;
         padding: 32px 20px;
