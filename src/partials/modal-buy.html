@@ -1,6 +1,102 @@
 <!-- element zamykający to okno musi mieć parametr data-modal-buy-close -->
 <div class="modal is-hidden" data-modal-buy>
     <div class="modal-buy">
-
+        <h2 class="section-title mod-buy-title"><span class="accent">Buy</span> now</h2>
+        <form class="mod-buy-form" name="form-buy-now">
+            <ul class="list mod-buy-list">
+                <li class="mod-buy-list-item">
+                    <picture>
+                        <source
+                            media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-chocolate-cubes-84x69@2x.png" size="84">
+                        <source media="screen and (min-width: 768px)"
+                            srcset="./images/buy-now/tab-des-chocolate-cubes-120x107.png" size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-chocolate-cubes-120x107@2x.png" size="120">
+                        <img src="./images/buy-now/mob-chocolate-cubes-84x69.png" alt="chocolate cubes">
+                    </picture>
+                    <button type="button" class="btn btn-other btn-29">100 g</button>
+                </li>
+                <li class="mod-buy-list-item">
+                    <picture>
+                        <source
+                            media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69@2x.png" size="84">
+                        <source media="screen and (min-width: 768px)"
+                            srcset="./images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107.png" size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-hazelnuts-milk-white-chocolate-cubes-120x107@2x.png"
+                            size="120">
+                        <img src="./images/buy-now/mob-hazelnuts-milk-white-chocolate-cubes-84x69.png"
+                            alt="hazelnuts milk white chocolate cubes">
+                    </picture>
+                    <button type="button" class="btn btn-other btn-29">200 g</button>
+                </li>
+                <li class="mod-buy-list-item">
+                    <picture>
+                        <source
+                            media="screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/mob-chocolate-bars-84x69@2x.png" size="84">
+                        <source media="screen and (min-width: 768px)"
+                            srcset="./images/buy-now/tab-des-chocolate-bars-120x111.png" size="120">
+                        <source
+                            media="screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx))"
+                            srcset="./images/buy-now/tab-des-chocolate-bars-120x111@2x.png" size="120">
+                        <img src="./images/buy-now/mob-chocolate-bars-84x69.png" alt="chocolate cubes">
+                    </picture>
+                    <button type="button" class="btn btn-other btn-29">300 g</button>
+                </li>
+            </ul>
+            <div class="mod-buy-form-box">
+                <div class="mod-buy-form-item">
+                    <label class="mod-buy-form-label" for="user-name">Personal information</label>
+                    <div class="mod-buy-inputs-name">
+                        <input class="clear-style mod-buy-form-input mod-buy-input-name" id="user-name" type="text"
+                            name="user-name" placeholder="Name" required>
+                        <input class="clear-style mod-buy-form-input mod-buy-input-surname" id="user-surname" type="text"
+                            name="user-surname" placeholder="Surname" required>
+                    </div>
+                </div>
+                <div class="mod-buy-form-item">
+                    <label class="mod-buy-form-label" for="user-email">E-mail</label>
+                    <input class="clear-style mod-buy-form-input" id="user-email" type="email" name="user-email"
+                        placeholder="Enter your email" required>
+                </div>
+                <div class="mod-buy-form-item">
+                    <label class="mod-buy-form-label" for="user-phone">Phone number</label>
+                    <div class="mod-buy-input-svg">
+                        <input class="clear-style mod-buy-form-input mod-buy-input-phone" id="user-phone" type="tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="user-phone" placeholder="Phone number" required>
+                        <svg class="mod-buy-phone-svg">
+                            <use href="./images/icons.svg#flag-ua"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mod-buy-form-item">
+                    <label class="mod-buy-form-label" for="user-card">Card number</label>
+                    <div class="mod-buy-input-svg">
+                        <input class="clear-style mod-buy-form-input mod-buy-input-card" id="user-card" type="text"
+                            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" name="user-card" placeholder="Enter card"
+                            required>
+                        <svg class="mod-buy-card-svg">
+                            <use href="./images/icons.svg#mastercard"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mod-buy-form-item">
+                    <label class="mod-buy-form-label" for="user-card">Comment</label>
+                    <textarea class="clear-style mod-buy-form-comment" id="user-comment" name="user-comment" rows="15"
+                        placeholder="Text input"></textarea>
+                </div>
+                <button class="btn send clear-style" type="submit">Submit</button>
+            </div>
+        </form>
+        <button type="button" class="btn clear-style mod-buy-close" data-modal-buy-close>
+            <svg class="svg-close-order" width="28" height="28">
+                <use href="./images/icons.svg#x-close"></use>
+            </svg>
+        </button>
     </div>
 </div>
