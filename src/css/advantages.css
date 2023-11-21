@@ -1,1 +1,84 @@
 /* oprócz klasy .advantages  pozostałe style rozpoczynają się od .adv- */
+
+.adv-section {
+  width: 375px;
+  height: 758px;
+  background-color: var(--DARK-BKG);
+  padding: 20px 20px 0px 20px;
+}
+
+.adv-list-item {
+  margin-bottom: 20px;
+  padding-right: 28px;
+}
+
+.adv-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.adv-icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid;
+  border-color: #ffffff80;
+  margin-bottom: 22px;
+  border-radius: 50%;
+}
+
+.adv-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--WHITE);
+  margin-bottom: 18px;
+  line-height: 21.94px;
+}
+
+.adv-text {
+  color: #ffffffb2;
+  font-size: 14px;
+  line-height: 17.07px;
+  letter-spacing: -0.28px;
+}
+
+@media (min-width: 768px) {
+  .adv-section {
+    width: 768px;
+    height: 620px;
+    padding: 50px 32px;
+  }
+  .adv-list-item {
+    margin-bottom: 32px;
+    width: 308px;
+  }
+  .adv-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv-section {
+    width: 1200px;
+    height: 344px;
+    padding: 50px 50px;
+  }
+  .adv-list-item {
+    margin-bottom: 0px;
+    border-right: 1px solid;
+    border-color: #ffffffb2;
+    height: 124px;
+  }
+
+  .adv-list-item:last-child {
+    border: none;
+  }
+
+  .adv-list {
+    gap: 70px;
+  }
+}
