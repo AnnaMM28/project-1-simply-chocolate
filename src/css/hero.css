@@ -16,13 +16,9 @@
   --tr-fn: cubic-bezier(0.4, 0, 0.2, 1);
   --tr-duration: 250ms;
 }
-.container {
-  max-width: 1200px;
-}
-.hero-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--white);
-  color: var(--body);
+.hero {
+  display: flex;
+  justify-content: center;
 }
 .hero-visually-hidden {
   position: absolute;
@@ -40,12 +36,12 @@
 @media screen and (max-width: 767px) {
   .hero-background {
     display: block;
-    padding: 395px 0 21px;
+    padding: 395px 20px 21px;
     background-image: url(../images/hero/mob-hero-335x621.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0 20px 50px;
+    margin: 0 0 50px;
     border-radius: 30px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -54,12 +50,12 @@
     (min-resolution: 2dppx) {
     .hero-background {
       display: block;
-      padding: 395px 0 21px;
+      padding: 395px 20px 21px;
       background-image: url(../images/hero/mob-hero-335x621@2x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      margin: 50px 20px;
+      margin: 0 0 50px;
       border-radius: 30px;
     }
   }
@@ -81,43 +77,28 @@
     letter-spacing: 0.02em;
     max-width: 310px;
   }
-  .hero-button-margin {
-    margin-right: 14px;
+  .hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding-top: 32px;
   }
-  .hero-button {
+  .hero-button-buy {
     padding: 12px 28px;
-    color: var(--white);
-    background-color: transparent;
-    border: 1px solid var(--white);
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.04em;
     line-height: 1.5;
     border-radius: 100px;
-    transition: background-color;
-    transition-duration: var(--tr-duration);
-    transition-timing-function: var(--tr-fn);
-  }
-  .hero-button:hover,
-  .hero-button:focus {
-    background-color: var(--yelow);
-    cursor: pointer;
   }
   @media screen and (max-width: 391px) {
-    .hero-button {
-      padding: 10px 25px;
-      margin-bottom: 14px;
-      color: var(--white);
-      background-color: transparent;
-      border: 1px solid var(--white);
+    .hero-button-buy {
+      padding: 12px 28px;
       font-weight: 600;
       font-size: 14px;
       letter-spacing: 0.04em;
       line-height: 1.5;
       border-radius: 100px;
-      transition: background-color;
-      transition-duration: var(--tr-duration);
-      transition-timing-function: var(--tr-fn);
     }
   }
   .hero-scroll {
@@ -142,9 +123,9 @@
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    fill: var(--white);
-    background-color: var(--white);
-    border: 1px solid var(--white);
+    background-color: var(--ACCENT-LIGH);
+    border: 1px solid var(--ACCENT-LIGH);
+    color: var(--ACCENT);
     padding: 0;
     cursor: pointer;
     transition: background-color;
@@ -153,15 +134,15 @@
   }
   .hero-icon:hover,
   .hero-icon:focus {
-    background-color: transparent;
-    cursor: pointer;
+    background-color: var(--ACCENT);
+    border: 1px solid var(--ACCENT);
   }
-  .hero-icon:hover,
-  .hero-icon:focus .hero-icon-trans {
-    fill: var(--white);
+  .hero-icon-trans:hover,
+  .hero-icon-trans:focus {
+    fill: var(--WHITE);
   }
   .hero-icon-trans {
-    fill: var(--yelow);
+    fill: var(--ACCENT);
     transition: fill;
     transition-timing-function: var(--tr-fn);
     transition-duration: var(--tr-duration);
@@ -171,12 +152,12 @@
 @media screen and (min-width: 768px) {
   .hero-background {
     display: block;
-    padding: 395px 0 21px;
+    padding: 395px 40px 21px;
     background-image: url(../images/hero/tab-hero-704x890.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 20px 50px;
+    margin: 0 0 50px;
     border-radius: 30px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -185,12 +166,12 @@
     (min-resolution: 2dppx) {
     .hero-background {
       display: block;
-      padding: 395px 0 21px;
+      padding: 395px 40px 21px;
       background-image: url(../images/hero/tab-hero-704x890@2x.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      margin: 50px 20px;
+      margin: 0 0 50px;
       border-radius: 30px;
     }
   }
@@ -214,44 +195,18 @@
     letter-spacing: 0.03em;
     max-width: 484px;
   }
-  .hero-button-margin {
-    margin-right: 14px;
+  .hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
   }
-  .hero-button {
+  .hero-button-buy {
     padding: 12px 28px;
-    color: var(--white);
-    background-color: transparent;
-    border: 1px solid var(--white);
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.04em;
     line-height: 1.5;
     border-radius: 100px;
-    transition: background-color;
-    transition-duration: var(--tr-duration);
-    transition-timing-function: var(--tr-fn);
-  }
-  .hero-button:hover,
-  .hero-button:focus {
-    background-color: var(--yelow);
-    cursor: pointer;
-  }
-  @media screen and (max-width: 391px) {
-    .hero-button {
-      padding: 10px 25px;
-      margin-bottom: 14px;
-      color: var(--white);
-      background-color: transparent;
-      border: 1px solid var(--white);
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 0.04em;
-      line-height: 1.5;
-      border-radius: 100px;
-      transition: background-color;
-      transition-duration: var(--tr-duration);
-      transition-timing-function: var(--tr-fn);
-    }
   }
   .hero-scroll {
     display: flex;
@@ -271,12 +226,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    fill: var(--white);
-    background-color: var(--white);
-    border: 1px solid var(--white);
+    background-color: var(--ACCENT-LIGH);
+    border: 1px solid var(--ACCENT-LIGH);
+    color: var(--ACCENT);
     padding: 0;
     cursor: pointer;
     transition: background-color;
@@ -285,30 +240,30 @@
   }
   .hero-icon:hover,
   .hero-icon:focus {
-    background-color: transparent;
-    cursor: pointer;
+    background-color: var(--ACCENT);
+    border: 1px solid var(--ACCENT);
   }
-  .hero-icon:hover,
-  .hero-icon:focus .hero-icon-trans {
-    fill: var(--white);
+  .hero-icon-trans:hover,
+  .hero-icon-trans:focus {
+    fill: var(--WHITE);
   }
   .hero-icon-trans {
-    fill: var(--yelow);
+    fill: var(--ACCENT);
     transition: fill;
     transition-timing-function: var(--tr-fn);
     transition-duration: var(--tr-duration);
   }
 }
 /* ============================================ DESKTOP 👇 ========================================*/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
   .hero-background {
     display: block;
-    padding: 395px 0 21px;
+    padding: 395px 40px 21px;
     background-image: url(../images/hero/des-hero-1136x600.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 20px 50px;
+    margin: 0 0 50px;
     border-radius: 30px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -317,17 +272,13 @@
     (min-resolution: 2dppx) {
     .hero-background {
       display: block;
-      padding: 395px 0 21px;
+      padding: 395px 40px 21px;
       background-image: url(../images/hero/des-hero-1136x600@2x.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      margin: 50px 20px;
+      margin: 0 0 50px;
       border-radius: 30px;
     }
-  }
-  .hero-container-first {
-    max-width: 1200px;
-    margin: 0 auto 50px;
   }
 }
