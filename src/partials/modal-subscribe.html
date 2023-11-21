@@ -1,6 +1,26 @@
 <!-- element zamykający to okno musi mieć parametr data-modal-subscribe-close -->
 <div class="modal is-hidden" data-modal-subscribe>
     <div class="modal-subscribe">
-
+        <div class="mod-sub-img">
+            <button type="button" class="btn clear-style mod-sub-close" data-modal-subscribe-close>
+                <svg class="svg-close-order" width="28" height="28">
+                    <use href="./images/icons.svg#x-close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mod-sub-txt">
+            <h2>Explore our<br><span class="accent">new chocolate</span> first!</h2>
+            <form class="mod-sub-form" name="form-subscribe">
+                <ul class="list mod-sub-list">
+                    <li class="mod-sub-list-item">
+                        <label class="mod-sub-form-label visually-hidden" for="user-email">E-mail</label>
+                        <input class="clear-style mod-sub-form-input" id="user-email" type="email" name="user-email" placeholder="Enter your email" required>
+                    </li>
+                    <li class="mod-buy-list-item">
+                        <button class="btn mod-sub-btn clear-style" type="submit">Subscribe</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
 </div>
