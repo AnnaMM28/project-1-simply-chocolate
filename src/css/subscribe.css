@@ -1,1 +1,91 @@
 /* oprócz klasy .subscribe pozostałe style rozpoczynają się od .sub- */
+
+.subscribe {
+  background-color: var(--DARK-BKG);
+  padding: 62px 20px 63px 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: url(../images/subscribe/mob-subscribe-375x370.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 375px;
+  height: 370px;
+  margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../images/subscribe/mob-subscribe-375x3702@2x.jpg);
+  }
+}
+
+.sub-heading {
+  font-size: 20px;
+  color: var(--WHITE);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: var(--WHITE);
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+  text-align: center;
+  width: 326px;
+  margin-bottom: 24px;
+}
+
+.sub-button {
+  background-color: var(--ACCENT);
+  color: var(--WHITE);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    padding: 72px 151px 72px 150px;
+    background-image: url(../images/subscribe/tab-subscribe-768x370.jpg);
+    max-width: 768px;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../images/subscribe/tab-subscribe-768x370@2x.jpg);
+    }
+  }
+  .sub-heading {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+    padding-bottom: 24px;
+  }
+  .sub-text {
+    width: 467px;
+  }
+  .sub-button {
+    padding: 14px 40px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    padding: 72px 367px 72px 366px;
+    background-image: url(../images/subscribe/des-subscribe-1200x370.jpg);
+    max-width: 1200px;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../images/subscribe/des-subscribe-1200x370@2x.jpg);
+    }
+  }
+  .sub-heading {
+    line-height: 1.17;
+  }
+}
