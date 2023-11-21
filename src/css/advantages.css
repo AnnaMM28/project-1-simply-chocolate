@@ -1,4 +1,7 @@
 /* oprócz klasy .advantages  pozostałe style rozpoczynają się od .adv- */
+.advantages {
+  margin-bottom: 72px;
+}
 
 .adv-section {
   width: 375px;
@@ -45,6 +48,9 @@
 }
 
 @media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 100px;
+  }
   .adv-section {
     width: 768px;
     height: 620px;
@@ -62,23 +68,38 @@
 }
 
 @media (min-width: 1200px) {
+  .advantages {
+    margin-bottom: 128px;
+  }
   .adv-section {
     width: 1200px;
     height: 344px;
     padding: 50px 50px;
   }
   .adv-list-item {
-    margin-bottom: 0px;
-    border-right: 1px solid;
-    border-color: #ffffffb2;
+    position: relative;
+    /* margin-bottom: 0px; */
+  }
+  .adv-list-item:nth-child(-n + 2)::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: block;
+    width: 1px;
     height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
-
+  .adv-list-item {
+    padding-right: 18px;
+  }
   .adv-list-item:last-child {
-    border: none;
+    padding-right: 0;
   }
-
   .adv-list {
     gap: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
