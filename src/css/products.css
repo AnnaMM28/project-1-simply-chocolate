@@ -41,6 +41,13 @@
     display: block;
     margin-bottom: 18px;
 }
+.prod-btn-price {
+    height: 33px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+}
 .prod-list-dots {
     gap: 13px;
 }
