@@ -21,6 +21,10 @@
     text-transform: uppercase;
 }
 
+.header-logo-span {
+    font-style: normal;
+}
+
 /* =============mobile menu============= */
 
 .header-modal-button {
@@ -90,6 +94,10 @@
     transform: translateX(0);
 }
 
+.header-x {
+    fill: var(--WHITE);
+}
+
 /* ========== MOBILE ========== */
 @media screen and (max-width: 767px) {
     .header-container {
@@ -110,7 +118,8 @@
         padding-bottom: 24px;
     }
 
-    .header-hamburger {
+    .header-hamburger,
+    .header-x {
         width: 32px;
         height: 32px;
     }
