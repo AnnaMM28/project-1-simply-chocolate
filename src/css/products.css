@@ -1,5 +1,5 @@
 /* oprócz klasy .products pozostałe style rozpoczynają się od .prod- */
-.products>.container {
+.prod-container {
     display: flex;
     flex-direction: column;
     align-items: center;
