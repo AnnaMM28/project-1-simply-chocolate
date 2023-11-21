@@ -1,1 +1,20 @@
 /* oprócz klasy .components pozostałe style rozpoczynają się od .comp- */
+.components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comp-title {
+    text-align: center;
+}
+.comp-text {
+    text-align: center;
+}
+.comp-images {
+    display: flex;
+    list-style-type: none;
+}
+.comp-picture {
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+}
