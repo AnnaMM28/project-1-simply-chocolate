@@ -54,11 +54,19 @@
   }
   .top-button {
     position: absolute;
-    right: 5px;
+    right: 0px;
     bottom: 68px;
+  }
+  .top-images {
+    width: 344px;
+    height: 464px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .top-images {
+    width: 368px;
+    height: 464px;
+  }
   .top-last-photo {
     display: block;
   }
@@ -70,7 +78,7 @@
   }
   .top-button {
     position: absolute;
-    right: 52px;
+    right: 0px;
     bottom: 55px;
   }
   .top-content-div {
