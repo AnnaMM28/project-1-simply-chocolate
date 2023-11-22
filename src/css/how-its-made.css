@@ -6,10 +6,6 @@
 .how-container {
   display: flex;
   flex-direction: column;
-  /*align-items: flex-start;*/
-  text-align:center;
-  height: 976px;
-  gap: 20px;
   flex-shrink: 0;
   width: 100%;
   padding: 0 16px;
@@ -51,6 +47,7 @@ iframe {
   font-size: 18px;
   line-height: 1.33;
   font-weight: 600;
+  margin-bottom: 20px;
 }
  .how-recipe-title br {
   display: none;
@@ -64,14 +61,19 @@ iframe {
 .how-list-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: ;
+  line-height: 1.28;
   margin-bottom: 18px;
+  margin-left: 14px;
 
 }
+.how-list-text:last-of-type {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 375px) {
   .how-container {
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
   }
 }
 /*====== tablet version ======*/
@@ -85,6 +87,7 @@ iframe {
     width: 768px;
     padding-left: 77px;
     padding-right: 77px;
+    
   }
   .how-description {
     padding: 32px;
@@ -111,13 +114,12 @@ iframe {
 
   .how-list-text {
     width: 464px;
-  }  
+  }
 }
  /*====== desktop version ======*/
 @media screen and (min-width: 1200px) {
   .how-section {
     padding-bottom: 128px;
-    
   }
   
   .how-container {
@@ -148,10 +150,6 @@ iframe {
     width: 452px;
     margin-bottom: 24px;
    }
-
-   .how-text:nth-child(1) {
-    display: none;
-  }
 }
 
 
