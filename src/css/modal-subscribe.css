@@ -1,5 +1,5 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
-.modal-subscribe { 
+  .modal-subscribe {
   margin: 0 auto;
   padding: 32px 24px;
   background-color: var(--LIGHT-BKG);
@@ -19,11 +19,11 @@
 .mod-subscribe-title {
   color: var(--DARK);
   display: block;
-  
-text-transform: uppercase;
+
+  text-transform: uppercase;
   margin-bottom: 24px;
 }
-.mod-subscribe-image { 
+.mod-subscribe-image {
   color: var(--WHITE);
   position: relative;
   display: block;
@@ -35,7 +35,6 @@ text-transform: uppercase;
   background-position: center, center;
   background-size: cover;
   border-radius: 30px;
- 
 }
 .btn.mod-subscribe-close {
   color: var(--DARK);
@@ -51,7 +50,6 @@ text-transform: uppercase;
   background-color: transparent;
   border: none;
 }
-
 
 .mod-subscribe-list {
   display: flex;
@@ -73,14 +71,13 @@ text-transform: uppercase;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.28px;
-  
 }
 
 .btn.close-order:hover,
 .btn.close-order:focus {
   color: var(--ACCENT);
 }
-}
+
 @media screen and (min-width: 375px) {
   .modal-subscribe {
     width: 311px;
@@ -88,41 +85,40 @@ text-transform: uppercase;
   }
 }
 
-}
 @media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
   .mod-subscribe-image {
     background-image: url("../images/tab-des-mod-subscribe-538x196@2x.jpg");
   }
 }
 
-
-
 @media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
   .mod-subscribe-image {
     background-image: url("../images/mob-mod-subscribe-311x169@2x.jpg");
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
   .modal-subscribe {
     width: 538px;
   }
-  .mod-subscribe-image {
-    height: 196px;
-    background-image: url("../images/tab-des-mod-subscribe-538x196.jpg");
-  }
-  .mod-subscribe-text {
-    padding: 40px;
-  }
-  .mod-subscribe-title {
-    margin-bottom: 28px;
-  }
-  .mod-subscribe-list {
-    gap: 8px;
-  }
-  .mod-subscribe-form-input {
-    padding: 14px 24px;
-    border-radius: 30px;
-  }
-  .mod-subscribe-form-input::placeholder {
-    font-size: 18px;
-    letter-spacing: -0.36px;
-  }
+}
+.mod-subscribe-image {
+  height: 196px;
+  background-image: url("../images/tab-des-mod-subscribe-538x196.jpg");
+}
+.mod-subscribe-text {
+  padding: 40px;
+}
+.mod-subscribe-title {
+  margin-bottom: 28px;
+}
+.mod-subscribe-list {
+  gap: 8px;
+}
+.mod-subscribe-form-input {
+  padding: 14px 24px;
+  border-radius: 30px;
+}
+.mod-subscribe-form-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.36px;
+}
