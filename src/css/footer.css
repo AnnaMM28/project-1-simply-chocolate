@@ -71,8 +71,8 @@
 .foot-nav-link:focus {
   color: var(--ACCENT);
 }
-.foot-social-icon:hover,
-.foot-social-icon:focus {
+.foot-social-svg:hover,
+.foot-social-svg:focus {
   fill: var(--ACCENT);
 }
 @media screen and (min-width: 768px) {
