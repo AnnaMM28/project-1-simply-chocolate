@@ -71,6 +71,10 @@
 .foot-nav-link:focus {
   color: var(--ACCENT);
 }
+.foot-social-link:hover,
+.foot-social-link:focus {
+  fill: var(--ACCENT);
+}
 .foot-social-svg:hover,
 .foot-social-svg:focus {
   fill: var(--ACCENT);
