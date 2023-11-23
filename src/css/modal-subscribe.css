@@ -1,6 +1,5 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
 
-
 .modal-subscribe {
   margin: 0 auto;
   background-color: var(--LIGHT-BKG);
@@ -16,7 +15,6 @@
 
 .mod-subscribe-text {
   padding: 32px 24px;
-  
 }
 .mod-subscribe-title {
   color: var(--DARK);
@@ -157,27 +155,22 @@
 }
 .mod-subscribe-title {
   margin-bottom: 28px;
-  
 }
 .mod-subscribe-list {
   gap: 8px;
 }
 .mod-subscribe-input {
-    display: flex;
-    align-items: center;
-    gap: 21.78px;
-    flex: 1 0 0;
-    align-self: stretch;
+  padding: 14px 24px;
+  border-radius: 30px;
 }
 .mod-subscribe-input::placeholder {
   font-size: 18px;
   letter-spacing: -0.36px;
 }
 
-.mod-sub-button{
-    display: flex;
-width: 263px;
-padding: 14px 18px;
-align-items: flex-start;
-gap: 40px;
+.mod-sub-button {
+ width: 263px;
+  padding: 14px 18px;
+  align-items: flex-start;
+
 }
