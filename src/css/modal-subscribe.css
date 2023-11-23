@@ -1,4 +1,5 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
+
 .modal-subscribe {
   margin: 0 auto;
   background-color: var(--LIGHT-BKG);
@@ -10,6 +11,7 @@
   width: 100%;
   max-height: 100%;
 }
+
 
 .mod-subscribe-text {
   padding: 32px 24px;
@@ -30,9 +32,8 @@
   background-color: var(--DARK);
   background-image: url("../images/subscribe/mob-mod-subscribe-311x169.jpg");
   background-repeat: no-repeat;
-  background-position: center, center;
+  background-position: center;
   background-size: cover;
-  border-radius: 30px;
 }
 .btn.mod-subscribe-close {
   color: var(--DARK);
@@ -53,18 +54,17 @@
   display: flex;
   flex-direction: row;
 }
-.mod-subscribe-form-input {
+.mod-subscribe-input {
   padding: 14px 18px;
   background-color: var(--LIGHT-BKG);
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 25px;
 }
-.mod-subscribe-form-input,
-.mod-subscribe-btn {
+.mod-subscribe-input,
+.mod-sub-button {
   flex-grow: 1;
-
 }
-.mod-subscribe-form-input::placeholder {
+.mod-subscribe-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
   font-size: 14px;
   font-weight: 400;
@@ -76,55 +76,48 @@
 .btn.close-order:focus {
   color: var(--ACCENT);
 }
-.mod-subscribe-list-one{
-    margin-bottom: 14px;
+.mod-subscribe-list-one {
+  margin-bottom: 14px;
 }
-
-.mod-subscribe-list-two{
-
-}
-
 
 .mod-sub-button {
-    cursor: pointer;
-    width: 93px;
-    height: 41px;
-    border-radius: 100px;
-    border: none;
-    background-color: var(--ACCENT);
-    color: var(--WHITE);
-    font-family: inherit;
-    font-weight: 600;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  width: 93px;
+  height: 41px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--ACCENT);
+  color: var(--WHITE);
+  font-family: inherit;
+  font-weight: 600;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mod-sub-button:hover,
 .mod-sub-button:focus {
-    background-color: var(--ACCENT-LIGH);
-    color: var(--ACCENT)
+  background-color: var(--ACCENT-LIGH);
+  color: var(--ACCENT);
 }
 
-
-.mod-subscribe-close{
-position: absolute;
-top: 14px;
-right: 14px;
-background-color: transparent;
-border: none;
-cursor: pointer;
+.mod-subscribe-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.mod-subscribe-label{
-    border-radius: 8px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    width: 100%;
-    height: 45px;
-    background-color: transparent;
-    outline: transparent;
-    padding-left: 18px;
+.mod-subscribe-label {
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 18px;
 }
-
 
 @media screen and (min-width: 375px) {
   .modal-subscribe {
@@ -162,11 +155,11 @@ cursor: pointer;
 .mod-subscribe-list {
   gap: 8px;
 }
-.mod-subscribe-form-input {
+.mod-subscribe-input {
   padding: 14px 24px;
   border-radius: 30px;
 }
-.mod-subscribe-form-input::placeholder {
+.mod-subscribe-input::placeholder {
   font-size: 18px;
   letter-spacing: -0.36px;
 }
