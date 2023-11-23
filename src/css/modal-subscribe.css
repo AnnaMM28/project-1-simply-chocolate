@@ -169,8 +169,7 @@
 }
 
 .mod-sub-button {
- width: 263px;
-  padding: 14px 18px;
-  align-items: flex-start;
-
+    width: 133px;
+    height: 45px;
 }
+
