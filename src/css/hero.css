@@ -1,47 +1,23 @@
 /* style rozpoczynają się od .hero- */
 :root {
-  --white: #ffffff;
-  --body: #111111;
-  --yelow: #fd9222;
-  --iris: #4d5ae5;
-  --ocean: #404bbf;
-  --cloud: #f4f4fd;
-  --studio: #2e2f42;
-  --cornflower: #e7e9fc;
-  --footcolor: #31d0aa;
-  --modalcolor: #fcfcfc;
-  --placeholder: #2e2f4266;
-  --lightslate: #8e8f99;
-  --color-neutral-dark: #303030;
   --tr-fn: cubic-bezier(0.4, 0, 0.2, 1);
   --tr-duration: 250ms;
 }
-.hero {
-  display: flex;
-  justify-content: center;
-}
-.hero-visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /* ================================================= MOBILE 👇 ========================================= */
 @media screen and (max-width: 767px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    padding: 0 32px;
+  }
   .hero-background {
     display: block;
-    padding: 395px 20px 21px;
+    padding: 395px 22px 21px 20px;
     background-image: url(../images/hero/mob-hero-335x621.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0 0 50px;
+    margin: 0 0 71px;
     border-radius: 30px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -49,14 +25,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-background {
-      display: block;
-      padding: 395px 20px 21px;
       background-image: url(../images/hero/mob-hero-335x621@2x.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      margin: 0 0 50px;
-      border-radius: 30px;
     }
   }
   .hero-container {
@@ -70,7 +39,7 @@
     margin-right: auto;
   }
   .hero-text {
-    color: var(--white);
+    color: var(--WHITE);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.07;
@@ -109,7 +78,7 @@
     gap: 12px;
   }
   .hero-scroll-text {
-    color: var(--white);
+    color: var(--WHITE);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.07;
@@ -125,34 +94,41 @@
     border-radius: 50%;
     background-color: var(--ACCENT-LIGH);
     border: 1px solid var(--ACCENT-LIGH);
-    color: var(--ACCENT);
     padding: 0;
     cursor: pointer;
-    transition: background-color;
+    transition: background-color, fill;
     transition-timing-function: var(--tr-fn);
     transition-duration: var(--tr-duration);
   }
   .hero-icon:hover,
   .hero-icon:focus {
     background-color: var(--ACCENT);
-    border: 1px solid var(--ACCENT);
+    border-color: var(--ACCENT);
   }
-  .hero-icon-trans:hover,
-  .hero-icon-trans:focus {
-    fill: var(--WHITE);
-  }
+
   .hero-icon-trans {
     fill: var(--ACCENT);
-    transition: fill;
+  }
+  .hero-icon:hover .hero-icon-trans {
+    fill: var(--WHITE);
+    transition-timing-function: var(--tr-fn);
+    transition-duration: var(--tr-duration);
+  }
+  .hero-icon:focus .hero-icon-trans {
+    fill: var(--WHITE);
     transition-timing-function: var(--tr-fn);
     transition-duration: var(--tr-duration);
   }
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    padding: 0 32px;
+  }
   .hero-background {
-    display: block;
-    padding: 395px 40px 21px;
+    padding: 671px 40px 40px;
     background-image: url(../images/hero/tab-hero-704x890.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,14 +141,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-background {
-      display: block;
-      padding: 395px 40px 21px;
       background-image: url(../images/hero/tab-hero-704x890@2x.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin: 0 0 50px;
-      border-radius: 30px;
     }
   }
   .hero-container {
@@ -188,7 +157,7 @@
   }
   .hero-text {
     padding-bottom: 32px;
-    color: var(--white);
+    color: var(--WHITE);
     font-weight: 500;
     font-size: 28px;
     line-height: 1.07;
@@ -215,7 +184,7 @@
     gap: 14px;
   }
   .hero-scroll-text {
-    color: var(--white);
+    color: var(--WHITE);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.07;
@@ -231,25 +200,27 @@
     border-radius: 50%;
     background-color: var(--ACCENT-LIGH);
     border: 1px solid var(--ACCENT-LIGH);
-    color: var(--ACCENT);
     padding: 0;
     cursor: pointer;
-    transition: background-color;
+    transition: background-color, fill;
     transition-timing-function: var(--tr-fn);
     transition-duration: var(--tr-duration);
   }
   .hero-icon:hover,
   .hero-icon:focus {
     background-color: var(--ACCENT);
-    border: 1px solid var(--ACCENT);
-  }
-  .hero-icon-trans:hover,
-  .hero-icon-trans:focus {
-    fill: var(--WHITE);
+    border-color: var(--ACCENT);
   }
   .hero-icon-trans {
     fill: var(--ACCENT);
-    transition: fill;
+  }
+  .hero-icon:hover .hero-icon-trans {
+    fill: var(--WHITE);
+    transition-timing-function: var(--tr-fn);
+    transition-duration: var(--tr-duration);
+  }
+  .hero-icon:focus .hero-icon-trans {
+    fill: var(--WHITE);
     transition-timing-function: var(--tr-fn);
     transition-duration: var(--tr-duration);
   }
@@ -257,28 +228,16 @@
 /* ============================================ DESKTOP 👇 ========================================*/
 @media screen and (min-width: 1200px) {
   .hero-background {
-    display: block;
-    padding: 395px 40px 21px;
+    padding: 381px 40px 40px;
     background-image: url(../images/hero/des-hero-1136x600.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     margin: 0 0 50px;
-    border-radius: 30px;
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-background {
-      display: block;
-      padding: 395px 40px 21px;
       background-image: url(../images/hero/des-hero-1136x600@2x.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin: 0 0 50px;
-      border-radius: 30px;
     }
   }
 }
