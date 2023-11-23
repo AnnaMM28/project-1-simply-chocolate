@@ -1,5 +1,5 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
-  .modal-subscribe {
+.modal-subscribe {
   margin: 0 auto;
   padding: 32px 24px;
   background-color: var(--LIGHT-BKG);
