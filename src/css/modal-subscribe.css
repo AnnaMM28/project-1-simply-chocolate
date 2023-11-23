@@ -1,5 +1,5 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
-  .modal-subscribe {
+.modal-subscribe {
   margin: 0 auto;
   padding: 32px 24px;
   background-color: var(--LIGHT-BKG);
@@ -30,7 +30,7 @@
   width: 100%;
   height: 169px;
   background-color: var(--DARK);
-  background-image: url("../images/mob-mod-subscribe-311x169.jpg");
+  background-image: url("../images/reviews/mob-mod-subscribe-311x169.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover;
@@ -87,13 +87,13 @@
 
 @media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
   .mod-subscribe-image {
-    background-image: url("../images/tab-des-mod-subscribe-538x196@2x.jpg");
+    background-image: url("../images/reviews/tab-des-mod-subscribe-538x196@2x.jpg");
   }
 }
 
 @media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
   .mod-subscribe-image {
-    background-image: url("../images/mob-mod-subscribe-311x169@2x.jpg");
+    background-image: url("../images/reviews/mob-mod-subscribe-311x169@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -103,7 +103,7 @@
 }
 .mod-subscribe-image {
   height: 196px;
-  background-image: url("../images/tab-des-mod-subscribe-538x196.jpg");
+  background-image: url("../images/reviews/tab-des-mod-subscribe-538x196.jpg");
 }
 .mod-subscribe-text {
   padding: 40px;
