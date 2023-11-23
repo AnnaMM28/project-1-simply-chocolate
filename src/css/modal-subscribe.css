@@ -1,5 +1,6 @@
 /* oprócz klasy .modal-subscribe pozostałe style rozpoczynają się od .mod-sub- */
 
+
 .modal-subscribe {
   margin: 0 auto;
   background-color: var(--LIGHT-BKG);
@@ -11,7 +12,6 @@
   width: 100%;
   max-height: 100%;
 }
-
 
 .mod-subscribe-text {
   padding: 32px 24px;
@@ -36,7 +36,7 @@
   background-size: cover;
 }
 .btn.mod-subscribe-close {
-  color: var(--DARK);
+  color: var(--WHITE);
   position: absolute;
   top: 14px;
   right: 14px;
@@ -82,7 +82,7 @@
 
 .mod-sub-button {
   cursor: pointer;
-  width: 93px;
+  width: 109px;
   height: 41px;
   border-radius: 100px;
   border: none;
@@ -155,11 +155,11 @@
 .mod-subscribe-list {
   gap: 8px;
 }
-.mod-subscribe-input {
+.mod-subscribe-form-input {
   padding: 14px 24px;
   border-radius: 30px;
 }
-.mod-subscribe-input::placeholder {
+.mod-subscribe-form-input::placeholder {
   font-size: 18px;
   letter-spacing: -0.36px;
 }
