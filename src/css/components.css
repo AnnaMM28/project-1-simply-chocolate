@@ -18,6 +18,9 @@
     width: 308px;
     line-height: normal;
 }
+.comp-text {
+    text-align: center;
+}
 .comp-images {
     display: flex;
     list-style-type: none;
