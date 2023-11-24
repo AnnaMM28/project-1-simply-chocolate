@@ -1,111 +1,116 @@
 /* oprócz klasy .components pozostałe style rozpoczynają się od .comp- */
-.components {
+.comp-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.comp-container {
+    gap: 24px;
     padding: 0;
 }
-.list-components {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.list-components>li {
-    width: 308px;
-    line-height: normal;
-}
-.comp-text {
-    text-align: center;
-}
-.comp-images {
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-    
-}
-.comp-picture {
-    border: 1px solid #FD9222;
-    border-radius: 15px;
-    
- }
-.comp-bordered-image {
-    border: 1px solid #FD9222;
-        border-radius: 15px;
-        padding: 19px;
-}
-.comp-picture-chocolate {
-    background-color: #FD9222;
-    border: 1px solid #FD9222;
-    border-radius: 15px;
+.comp-list {
+	flex-wrap: wrap;
+	gap: 20px;
 }
 .comp-item {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 335px;
+	height: 270px;
+	overflow: hidden;
+	border-radius: 15px;
+}
+.comp-btn{
+	height: 24px;
+	padding: 0 16px;
+	border-radius: 35px;
+}
+@media screen and (min-width: 1200px) {
+	.comp-list {
+		gap: 19px;
+	}
+	.comp-item {
+		width: 270px;
+	}
+}
+.comp-bkg-white {
+	background-color: var(--WHITE);
+	border: 1px solid var(--ACCENT);
+}
+.comp-bkg-accent {
+	background-color: var(--ACCENT);
+	border: 1px solid var(--ACCENT);
+}
+.comp-bkg-dark {
+	background-color: var(--BKG-DARK);
+	border: 1px solid var(--BKG-DARK);
+}
+.comp-lnk-overlay {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.comp-box-overlay {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.comp-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 224px;
+	height: 171px;
+	transform: translate(-50%, -50%);
+}
+.comp-item-title {
+	display: block;
+	position: absolute;
+	bottom: 28px;
+	left: 28px;
+	display: block;
+}
+.comp-item-overlay {
+	position: absolute;
+	display: block;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 28px;
+	background-color: var(--WHITE);
+	/* border: 1px solid var(--ACCENT); */
+	border-radius: 15px;
+    color: var(--DARK);
+	overflow: hidden;
+	transition-property: transform;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transform: translateY(100%);
+}
+.comp-lnk-overlay:hover .comp-item-overlay,
+.comp-lnk-overlay:focus .comp-item-overlay {
+	transform: translateY(0%);
+}
+.comp-title-overlay {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
 }
-.comp-picture-nuts {
-    background-color: #1E1823;
-    border: 1px solid #FD9222;
-    border-radius: 15px;
+.comp-list-buttons {
+    gap: 6px;
+    margin-bottom: 14px;
+    font-size: 10px;
+    line-height: 1.2;
 }
-.comp-caption {
-    color:#ffffff
-    }
-    .comp-signature {
-        color: #111111
-    }
-    
-.comp-picture img,
-.comp-picture-nuts img {
-    max-width: 100%;
-    height: auto;
-}
-.comp-images li {
-    margin-right: 19px;
-    display: inline-block;
-    text-align: left;
-}
-@media screen and (min-width: 768px) {
-    .components {
-        padding: 50px 32px;
-    }
-
-    .list-components>li {
-        padding-right: 28px;
-        gap: 32px;
-    }
-}
-
 @media screen and (min-width: 1200px) {
-    .components {
-        padding: 50px;
-    }
-
-    .list-components {
-        gap: 70px;
-    }
-
-    .comp-item {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    .comp-item:nth-child(-n + 2)::after {
-        content: "";
-        position: absolute;
-        top: 60px;
-        right: 0;
-        display: block;
-        width: 1px;
-        height: 124px;
-        background-color: rgba(255, 255, 255, 0.50);
+    .comp-item-overlay {
+        padding: 20px;
     }
 }
-
