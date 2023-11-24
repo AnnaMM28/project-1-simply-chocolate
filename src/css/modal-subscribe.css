@@ -85,8 +85,8 @@
 
 .mod-sub-button {
   cursor: pointer;
-  width: 137px;
-  height: 52px;
+  width: 133px;
+  height: 45px;
   padding: 17px 40px;
   border-radius: 100px;
   border: none;
@@ -122,29 +122,10 @@
   outline: transparent;
   padding-left: 18px;
 }
-
-@media screen and (min-width: 375px) {
-  .modal-subscribe {
-    width: 311px;
-    max-height: 95%;
-  }
-}
-
-@media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
-  .mod-subscribe-image {
-    background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196@2x.jpg");
-  }
-}
-
-@media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
-  .mod-subscribe-image {
-    background-image: url("../images/subscribe/mob-mod-subscribe-311x169@2x.jpg");
-  }
-}
 @media screen and (min-width: 768px) {
   .modal-subscribe {
     width: 538px;
-  }
+  
 }
 .mod-subscribe-image {
   height: 196px;
@@ -167,9 +148,27 @@
   font-size: 18px;
   letter-spacing: -0.36px;
 }
-
-.mod-sub-button {
-    width: 133px;
-    height: 45px;
+  .mod-sub-button {
+    width: 137px;
+    height: 52px;
+  
+}
+}
+@media screen and (min-width: 375px) {
+  .modal-subscribe {
+    width: 311px;
+    max-height: 95%;
+  }
 }
 
+@media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+  .mod-subscribe-image {
+    background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196@2x.jpg");
+  }
+}
+
+@media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+  .mod-subscribe-image {
+    background-image: url("../images/subscribe/mob-mod-subscribe-311x169@2x.jpg");
+  }
+}
