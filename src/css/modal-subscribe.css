@@ -159,11 +159,27 @@
     width: 311px;
     max-height: 95%;
   }
+.mod-sub-button {
+    width: 137px;
+    height: 52px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .modal-subscribe {
+    width: 311px;
+    max-height: 95%;
+  }
 }
 
 @media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
   .mod-subscribe-image {
     background-image: url("../images/subscribe/tab-des-mod-subscribe-538x196@2x.jpg");
+  }
+}
+
+@media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2dppx)) {
+  .mod-subscribe-image {
+    background-image: url("../images/subscribe/mob-mod-subscribe-311x169@2x.jpg");
   }
 }
 
